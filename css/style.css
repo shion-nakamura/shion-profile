@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* ------------------- 
+common 
+------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(235, 233, 233, .3);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all .3s;
+}
+
+a:hover {
+  color: rgb(239, 103, 103);
+}
+
+li {
+  list-style: none;
+}
+
+/* ------------------- 
+header
+------------------- */
+header {
+  background: white;
+  height: 100px;
+  display: flex;
+}
+
+.headline {
+  width: 100%;
+  padding: 0 120px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headline ul {
+  display: flex;
+}
+
+.headline a + a {
+  margin-left: 20px;
+}
+
+.headline li {
+  font-size: 18px;
+}
+
+/* ------------------- 
+main 
+------------------- */
+main {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main h2 {
+  position: relative;
+  padding: 0 16px 4px;
+  margin-top: 50px;
+  border-bottom: 2px solid rgb(83, 83, 83);
+}
+
+main h2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 140px;
+  height: inherit;
+  border-bottom: 2px solid rgb(239, 44, 44);
+}
+
+section + section {
+  margin-top: 50px;
+}
+
+section div {
+  background: white;
+}
+
+/* ------------- .sidebar ---------------- */
+.sidebar {
+  width: 400px;
+}
+
+.sidebar div {
+  margin: 16px 0;
+  padding: 8px 16px;
+}
+
+.sidebar dl {
+  padding: 0 16px;
+}
+
+.sidebar dt {
+  width: 100%;
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.sidebar dd {
+  margin: 0 auto;
+}
+
+/* --- .top-img --- */
+.top-img {
+  text-align: center;
+}
+
+.top-img img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px;
+}
+
+/* --- #profile --- */
+#profile dt {
+  border-left: 4px solid rgba(127, 208, 241, 0.6);
+}
+
+
+#profile dd {
+  width: calc(100% - 64px);
+  padding: 4px 0 0 64px;
+}
+
+/* --- #hobby --- */
+#hobby dt {
+  border-left: 4px solid rgba(138, 241, 127, 0.6);
+}
+
+#hobby dd {
+  width: calc(100% - 32px);
+  padding: 4px 0 0 32px;
+}
+
+/* ---------------- .container ---------------- */
+.container {
+  margin-left: 64px;
+  width: calc(100% - 464px);
+  /* height: 1400px;
+  overflow: scroll; */
+}
+
+.container h3 {
+  font-size: 18px;
+  padding-left: 8px;
+  border-left: 4px solid rgba(241, 127, 214, 0.6);
+}
+
+.container div {
+  margin: 32px 0;
+  padding: 2px 16px;
+}
+
+.container li {
+  list-style: disc;
+}
+
+.container ul {
+  margin: 0;
+}
+
+.container p {
+  padding: 0 16px;
+  text-align: justify;
+}
+
+/* --- #history --- */
+#history table {
+  border-collapse: collapse;
+  margin: 32px;
+}
+
+#history thead {
+  background: rgb(215, 234, 243);
+}
+
+#history th, #history td {
+  border: 1px solid rgb(86, 86, 86);
+  padding: 8px 32px;
+}
+
+#history tbody th {
+  font-weight: normal;
+}
+
+#history tbody tr:nth-child(2n) {
+  background: rgba(224, 239, 246, 0.41);
+} 
+
+#history tbody tr:nth-child(2n-1) {
+  background: white;
+} 
+
+
+/* --- #memory --- */
+#memory h4 {
+  font-size: 16px;
+  margin: 4px 24px;
+}
+
+/* ---------------- .main-footer ---------------- */
+.main-footer {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+}
+.main-footer p {
+  font-size: 18px;
+  padding: 16px;
+  background: white;
+}
+
+
+/* -------------- 
+footer 
+-------------- */
+footer {
+  margin-top: 50px;
+  background: white;
+  display: flex;
+}
+
+footer div {
+  margin: 32px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0 0 0 16px;
+}
+
+footer h4, footer li {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 4px;
+}
+
+footer li {
+  list-style: disc;
+}
